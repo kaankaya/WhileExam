@@ -56,15 +56,17 @@ namespace whileExam
             {
                 if(t % 2 == 0)
                 {
-                    evenNumber = t;
-                    Console.WriteLine($"Çift sayı {evenNumber}");
+                    evenNumber += t;
+                    
                 }else
                 {
-                    oddNumber = t;
-                    Console.WriteLine($"Tek sayı {oddNumber}");
+                    oddNumber += t;
+                    
                 }
                 t++;
             }
+            Console.WriteLine($"Çift Sayıların Toplamı {evenNumber}");
+            Console.WriteLine($"Tek Sayıların Toplamı {oddNumber}");
         }
     }
 }
